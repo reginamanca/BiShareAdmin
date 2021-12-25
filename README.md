@@ -1,2 +1,2 @@
 # BiShareAdmin
-BiShare for Admin
+Web Admin untuk BiShare
