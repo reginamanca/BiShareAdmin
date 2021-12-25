@@ -21,7 +21,7 @@
         <td align="center">
             <span style="line-height: 1.6; font-wight: blod;">
             BISHARE
-            <br> MARKETPLACE POLIBATAM
+            <br>MARKETPLACE POLIBATAM
     </span>
     </td>
     </tr>
