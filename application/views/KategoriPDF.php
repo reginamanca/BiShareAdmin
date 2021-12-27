@@ -20,16 +20,16 @@
         <tr >
             <th>No</th>
             <th>Code</th>
-            <th>Kategori</th>
+            <th>Nama Kategori</th>
             <th>Deskripsi</th>
         </tr>
 
         <?php
         $no= 1;
         foreach ($kategori as $kategori): ?>
-           <?php if($kategori == NULL){
-               continue;
-           } ?>
+             <?php if(isset($kategori['kategoriid']) == null){
+                continue;
+            } ?>
 
         <tr>
             <td><?php echo $no++ ?></td>

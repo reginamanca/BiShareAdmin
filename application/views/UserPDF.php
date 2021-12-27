@@ -20,24 +20,30 @@
         <tr >
             <th>No</th>
             <th>Code</th>
+            <th>Id</th>
             <th>Nama</th>
             <th>Username</th>
             <th>Email</th>
+            <th>No HP</th>
+            <th>Status</th>
             <th>Start Date</th>
         </tr>
         <?php
         $no= 1;
         foreach ($user as $user): ?>
-           <?php if($user == NULL){
-               continue;
-           } ?>
+           <?php if(isset($user['userid']) == null){
+                continue;
+            } ?>
 
         <tr>
             <td><?php echo $no++ ?></td>
             <td><?php echo $user['usercode'] ?></td>
+            <td><?php echo $user['userid'] ?></td>
             <td><?php echo $user['nama'] ?></td>
             <td><?php echo $user['username'] ?></td>
             <td><?php echo $user['email'] ?></td>
+            <td><?php echo $user['nohp'] ?></td>
+            <td><?php echo $user['status'] ?></td>
             <td><?php echo $user['userdate'] ?></td>
         </tr>
 

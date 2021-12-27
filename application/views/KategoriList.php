@@ -18,12 +18,12 @@
                 </span>
                 <span class="text">Add</span>
             </a>
-            <a href="<?php echo site_url('kategorilist/pdf') ?>" class="btn btn-danger   btn-icon-split">
-            <span class="icon text-white-50">
-            <i class="fas fa-file"></i>
-            </span>
-            <span class="text">Export PDF</span>
-            </a>
+            <a href="<?php echo site_url('kategori/pdf') ?>" class="btn btn-danger   btn-icon-split">
+<span class="icon text-white-50">
+    <i class="fas fa-file"></i>
+</span>
+<span class="text">Export PDF</span>
+</a>
         </div>
         <div class="card-body">
             <div class="table-responsive">

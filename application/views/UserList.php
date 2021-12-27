@@ -18,7 +18,7 @@
                 </span>
                 <span class="text">Add</span>
             </a>
-            <a href="<?php echo site_url('user/pdf') ?>" class="btn btn-danger   btn-icon-split">
+            <a href="<?php echo site_url('User/pdf') ?>" class="btn btn-danger   btn-icon-split">
             <span class="icon text-white-50">
             <i class="fas fa-file"></i>
             </span>
