@@ -111,4 +111,23 @@ class Kategori extends CI_Controller
 
         return ReturnJsonSimple(true, 'Sukses', 'Kategori dihapus');
     }
+
+    public function pdf()
+    {
+        $this->load->library('dompdf_gen');
+
+        $data['kategori'] = $this->kategori_model->tampil_data();
+       
+        $this->load->view('KategoriPDF', $data);
+
+        $paper_size = 'A3';
+        $orientation = 'landscape';
+        $html = $this->output->get_output();
+        $this->dompdf->set_paper($paper_size, $orientation);
+
+
+        $this->dompdf->load_html($html);
+        $this->dompdf->render();
+        $this->dompdf->stream("laporan_kategori.pdf", array('Attachment' =>0));
+    }
 }

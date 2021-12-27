@@ -232,11 +232,24 @@ class User extends CI_Controller
 
         return ReturnJsonSimple(true, 'Suksus', 'User dihapus');
     }
-
-    public function print()
+    public function pdf()
     {
-        $data['User'] = $this->User_Model->tampil_data("UserList")->result();
-        $this->load->view('printuser', $data);
+        $this->load->library('dompdf_gen');
+
+        $data['user'] = $this->user_model->tampil_data();
+       
+        $this->load->view('UserPDF', $data);
+
+        $paper_size = 'A3';
+        $orientation = 'landscape';
+        $html = $this->output->get_output();
+        $this->dompdf->set_paper($paper_size, $orientation);
+
+
+        $this->dompdf->load_html($html);
+        $this->dompdf->render();
+        $this->dompdf->stream("laporan_user.pdf", array('Attachment' =>0));
     }
+
 
 }

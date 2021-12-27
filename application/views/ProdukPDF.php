@@ -22,9 +22,9 @@
             <th>Code</th>
             <th>Nama Toko</th>
             <th>Nama Produk</th>
-            <th>Date</th>
+            <th>Start Date</th>
             <th>Kategori</th>
-            <th>Harag</th>
+            <th>Harga</th>
             <th>Stok</th>
             <th>Deskripsi</th>
             <th>Fitur</th>

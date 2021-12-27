@@ -3,7 +3,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Produk Form </h1>
+        <h1 class="h3 mb-0 text-gray-800">PRODUK FORM </h1>
 
     </div>
     <div class="card shadow mb-4">
@@ -25,7 +25,7 @@
                 <?php if($status != 'admin' || $produk['produkid'] != '') {?>
                 <input type="hidden" name="tokoid" value="<?php echo $produk['tokoid'] ?>" />
                 <div class="row mb-3">
-                    <label class="col-sm-2 col-form-label">Toko</label>
+                    <label class="col-sm-2 col-form-label">Nama Toko</label>
                     <div class="col-sm-10">
                         <input type="text" name="tokoname" class="form-control"
                             value="<?php echo $produk['tokoname'] ?>" readonly>
@@ -33,7 +33,7 @@
                 </div>
                 <?php }else{?>
                 <div class="row mb-3">
-                    <label class="col-sm-2 col-form-label">Toko</label>
+                    <label class="col-sm-2 col-form-label">Nama Toko</label>
                     <div class="col-sm-10">
                         <?php 
                      $options = array('' => 'Pilih salah satu',);
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label class="col-sm-2 col-form-label">Nama</label>
+                    <label class="col-sm-2 col-form-label">Nama Produk</label>
                     <div class="col-sm-10">
                         <input type="text" name="produkname" class="form-control"
                             value="<?php echo $produk['produkname'] ?>" required>

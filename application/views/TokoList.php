@@ -3,7 +3,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Toko List (<?php echo ucfirst($tokostatus) ?>)</h1>
+        <h1 class="h3 mb-0 text-gray-800">TOKO LIST(<?php echo ucfirst($tokostatus) ?>)</h1>
 
     </div>
     <div class="card shadow mb-4">
@@ -32,7 +32,7 @@
                 </span>
                 <span class="text">Reject</span>
             </a>
-            <a href="<?php echo site_url('Beli_Form/pdf') ?>" class="btn btn-danger   btn-icon-split">
+            <a href="<?php echo site_url('toko/pdf') ?>" class="btn btn-danger   btn-icon-split">
             <span class="icon text-white-50">
             <i class="fas fa-file"></i>
             </span>
@@ -44,10 +44,10 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th>No</th>
                             <th>Code</th>
-                            <th>Nama</th>
-                            <th>Date</th>
+                            <th>Nama Toko</th>
+                            <th>Start Date</th>
                             <th>Status</th>
                             <th>Action</th>
                         </tr>

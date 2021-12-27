@@ -3,7 +3,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Kategori Form </h1>
+        <h1 class="h3 mb-0 text-gray-800">KATEGORI FORM</h1>
 
     </div>
     <div class="card shadow mb-4">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label class="col-sm-2 col-form-label">Nama</label>
+                    <label class="col-sm-2 col-form-label">Nama Kategori</label>
                     <div class="col-sm-10">
                         <input type="text" name="kategoriname" class="form-control"
                             value="<?php echo $kategori['kategoriname'] ?>" required>

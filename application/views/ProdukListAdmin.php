@@ -3,7 +3,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Produk List Admin (<?php echo ucfirst($produkstatus) ?>) </h1>
+        <h1 class="h3 mb-0 text-gray-800">PRODUK LIST ADMIN (<?php echo ucfirst($produkstatus) ?>) </h1>
 
     </div>
     <div class="card shadow mb-4">
@@ -52,10 +52,10 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th>No</th>
                             <th>Code</th>
-                            <th>Name</th>
-                            <th>Toko</th>
+                            <th>Nama Produk</th>
+                            <th>Nama Toko</th>
                             <th>Kategori</th>
                             <th>Status</th>
                             <th>Action</th>

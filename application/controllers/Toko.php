@@ -252,4 +252,23 @@ class Toko extends CI_Controller
         $this->user_model->insert($user, $user['userid']);
         return ReturnJsonSimple(true, 'Suksus', 'toko dihapus');
     }
+
+    public function pdf()
+    {
+        $this->load->library('dompdf_gen');
+
+        $data['toko'] = $this->toko_model->tampil_data();
+       
+        $this->load->view('TokoPDF', $data);
+
+        $paper_size = 'A3';
+        $orientation = 'landscape';
+        $html = $this->output->get_output();
+        $this->dompdf->set_paper($paper_size, $orientation);
+
+
+        $this->dompdf->load_html($html);
+        $this->dompdf->render();
+        $this->dompdf->stream("laporan_toko.pdf", array('Attachment' =>0));
+    }
 }

@@ -22,6 +22,14 @@ class User_Model extends CI_Model
         }
     }
 
+    public function tampil_data()
+    {
+        echo $this->dbname;
+        return $this->database->getReference($this->dbname)
+        ->getValue();
+    }
+
+
     public function GetList()
     {
         $list = $this->database->getReference($this->dbname)

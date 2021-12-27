@@ -12,35 +12,30 @@
         font : arial;
     }
 </style>
-</style>
 </head><body>
 
-<h2 align="center" color="#FF4500">LAPORAN EVENT BISHARE MARKETPLACE POLIBATAM </h2>
-<br/>
-    <table align="center" border="1" >
+<h2 align="center" color="#FF4500">DATA USER BISHARE MARKETPLACE POLIBATAM </h2>
+    <table align="center" border="1">
       
         <tr >
             <th>No</th>
-            <th>ID</th>
-            <th>Tahun</th>
-            <th>Judul Event</th>
+            <th>Code</th>
+            <th>Kategori</th>
             <th>Deskripsi</th>
-            <th>Status</th>
         </tr>
+
         <?php
         $no= 1;
-        foreach ($event as $event): ?>
-           <?php if($event == NULL){
+        foreach ($kategori as $kategori): ?>
+           <?php if($kategori == NULL){
                continue;
            } ?>
 
         <tr>
             <td><?php echo $no++ ?></td>
-            <td><?php echo $event['eventcode'] ?></td>
-            <td><?php echo $event['eventid'] ?></td>
-            <td><?php echo $event['eventnama'] ?></td>
-            <td><?php echo $event['eventdesc'] ?></td>
-            <td><?php echo $event['status'] ?></td>
+            <td><?php echo $kategori['kategoricode'] ?></td>
+            <td><?php echo $kategori['kategoriname'] ?></td>
+            <td><?php echo $kategori['kategoridesc'] ?></td>
         </tr>
 
         <?php endforeach; ?>

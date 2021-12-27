@@ -3,7 +3,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">User Form </h1>
+        <h1 class="h3 mb-0 text-gray-800">USER FORMS </h1>
 
     </div>
     <div class="card shadow mb-4">
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="row mb-3">
-                    <label class="col-sm-2 col-form-label">Date</label>
+                    <label class="col-sm-2 col-form-label">Start Date</label>
                     <div class="col-sm-10">
                         <input type="date" name="userdate" class="form-control" value="<?php echo $user['userdate'] ?>"
                             readonly>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label class="col-sm-2 col-form-label">No HP</label>
+                    <label class="col-sm-2 col-form-label">No. HP</label>
                     <div class="col-sm-10">
                         <?php 
                         $formcontrol = array(

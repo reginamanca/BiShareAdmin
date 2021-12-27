@@ -15,7 +15,7 @@
             <form action="<?php echo site_url('Event/Save') ?>" method="post">
                 <input type="hidden" name="eventid" value="<?php echo $event['eventid'] ?>" />             
                 <div class="row mb-3">
-                    <label class="col-sm-2 col-form-label">Nama</label>
+                    <label class="col-sm-2 col-form-label">Judul Event</label>
                     <div class="col-sm-10">
                         <input type="text" name="eventnama" class="form-control"
                             value="<?php echo $event['eventnama'] ?>" required>
